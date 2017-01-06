@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8 name=viewport content="width=device-width,initial-scale=1maximum-scale=1,user-scalable=0">
+    <title>疯狂之速度礼包</title>
+    <script>
+      window.xc_mobil_config= {
+        has_error : {{ has_error|json_encode|raw }} ,
+        error_msg : {{ error_msg|json_encode|raw }} ,
+        join_num : {{ oil_num|default(0) }} ,   // 参团人数
+        is_subscribe : {{ is_subscribe|json_encode|raw|default(0) }},   // 是否订阅公众号
+        is_login : {{ is_login|json_encode|raw|default(0) }}, // 是否系统登录
+        is_wechat_login : {{ is_wechat_login|json_encode|raw|default(0) }}, // 是否微信登录
+        type : {{ type|json_encode|raw }},  // 类型 string: start=>发起者 joined=>参与者 not_join=>未参与
+        is_first : {{ is_first|json_encode|raw|default(0) }},   // 是否显示首页引导页
+        id : {{ id|json_encode|raw|default(0) }},   // 组团活动id
+        finished : {{ finished|json_encode|raw|default(0) }},   // 是否已成团
+        nickname : {{ nickname|json_encode|raw }},  // 用户微信昵称
+        expires_at : {{ expires_at|json_encode|raw }},  // 组团活动过期时间
+        started_at : {{ started_at|json_encode|raw }},  // 组团活动开启时间
+        join_list : {{ join_list|json_encode|raw }},  // 组团活动参与用户列表
+        join_promotions : {{ join_promotions|json_encode|raw }},  // 参与组团活动列表
+        start_promotions : {{ start_promotions|json_encode|raw }},  // 发起组团活动列表
+        stage: {{ stage|default(1) }}, //当前进行到的步骤
+        is_self_start: '{{ is_self_start }}',
+        total_num: {{ total_num|default(0) }}
+      };
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    {% include "AppBundle:h5:weixin_share.html.twig" %}
+    <!-- <script src="http://127.0.0.1:8080/app.js"></script> -->
+  </body>
+</html>

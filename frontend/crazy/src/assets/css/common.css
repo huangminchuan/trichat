@@ -1,0 +1,41 @@
+body {
+  background-image: url('/bundles/app/crazy_img/bg.png');
+  background-color: #fff;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+#app {
+  height: 100%
+}
+.clearfix:after {
+   content: '';
+   display: table;
+   clear: both;
+}
+* .clearfix {
+   zoom: 1;
+}
+.grey-bar {
+  background-color: #F5F5F5;
+  height: 10px;
+}
+.board {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.7);
+  z-index: 10;
+}
+.active-bar {
+  color: #349FEC;
+}
+.big-boss {
+  color: #fff;
+  background-color: #349FEC;
+}
+.none-background {
+  background-image: none!important;
+  background-color: #fff!important;
+}

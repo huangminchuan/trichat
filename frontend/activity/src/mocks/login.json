@@ -1,0 +1,36 @@
+{
+  from: '1、0',
+  added: 'true、false',
+  follow: 'true/false',
+  level: '0-6',
+  stage: '500\1000',
+  question: [
+    {
+      title: '哪个车型是对的',
+      answer: [
+        {
+          content: '宝马',
+          boolean: 'true'、'false',
+          url: '../../...png'
+        },
+        {
+          content: '奔驰',
+          boolean: 'true'、'false',
+          url: '../../...png'
+        },
+        {
+          content: '雷克萨斯',
+          boolean: 'true'、'false',
+          url: '../../...png'
+        }
+      ]
+    }
+  ],
+  scroll: [
+    {
+      username: '李科',
+      usericon: '../../..png',
+      userget: '获得了空调代金券100元'
+    }
+  ]
+}
